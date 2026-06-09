@@ -20,56 +20,87 @@ El sistema:
 
 Cada receta almacenada en MongoDB sigue esta estructura:
 
+```json
 {
-  _id: ObjectId('6a27bc250b9eb8a3eecc0c82'),
-  meal_id: '52771',
-  area: 'Italian',
-  category: 'Vegetarian',
-  created_at: ISODate('2026-06-09T07:12:59.315Z'),
+  _id: ObjectId('6a27bc260b9eb8a3eecc0c83'),
+  meal_id: '52795',
+  area: 'India',
+  category: 'Chicken',
+  created_at: ISODate('2026-06-09T07:12:59.868Z'),
   ingredients: [
     {
-      name: 'penne rigate',
-      measure: '1 pound'
+      name: 'chicken',
+      measure: '1.2 kg'
     },
     {
-      name: 'olive oil',
-      measure: '1/4 cup'
+      name: 'onion',
+      measure: '5 thinly sliced'
+    },
+    {
+      name: 'tomatoes',
+      measure: '2 finely chopped'
     },
     {
       name: 'garlic',
-      measure: '3 cloves'
+      measure: '8 cloves chopped'
     },
     {
-      name: 'chopped tomatoes',
-      measure: '1 tin'
+      name: 'ginger paste',
+      measure: '1 tbsp'
     },
     {
-      name: 'red chilli flakes',
-      measure: '1/2 teaspoon'
+      name: 'vegetable oil',
+      measure: '¼ cup'
     },
     {
-      name: 'italian seasoning',
-      measure: '1/2 teaspoon'
+      name: 'cumin seeds',
+      measure: '2 tsp'
     },
     {
-      name: 'basil',
-      measure: '6 leaves'
+      name: 'coriander seeds',
+      measure: '3 tsp'
     },
     {
-      name: 'parmigiano-reggiano',
-      measure: 'sprinkling'
+      name: 'turmeric powder',
+      measure: '1 tsp'
+    },
+    {
+      name: 'chilli powder',
+      measure: '1 tsp'
+    },
+    {
+      name: 'green chilli',
+      measure: '2'
+    },
+    {
+      name: 'yogurt',
+      measure: '1 cup'
+    },
+    {
+      name: 'cream',
+      measure: '¾ cup'
+    },
+    {
+      name: 'fenugreek',
+      measure: '3 tsp Dried'
+    },
+    {
+      name: 'garam masala',
+      measure: '1 tsp'
+    },
+    {
+      name: 'salt',
+      measure: 'To taste'
     }
   ],
-  instructions: 'Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes.\r\nIn a large skillet over medium-high heat, add the olive oil and heat until the oil starts to shimmer. Add the garlic and cook, stirring, until fragrant, 1 to 2 minutes. Add the chopped tomatoes, red chile flakes, Italian seasoning and salt and pepper to taste. Bring to a boil and cook for 5 minutes. Remove from the heat and add the chopped basil.\r\nDrain the pasta and add it to the sauce. Garnish with Parmigiano-Reggiano flakes and more basil and serve warm.',
-  name: 'Spicy Arrabiata Penne',
-  source: null,
-  tags: [
-    'Pasta',
-    'Curry'
-  ],
-  thumbnail: 'https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg',
-  youtube: 'https://www.youtube.com/watch?v=1IszT_guI08'
+  instructions: 'Take a large pot or wok, big enough to cook all the chicken, and heat the oil in it. Once the oil is hot, add sliced onion and fry them until deep golden brown. Then take them out on a plate and set aside.\r\nTo the same pot, add the chopped garlic and sauté for a minute. Then add the chopped tomatoes and cook until tomatoes turn soft. This would take about 5 minutes.\r\nThen return the fried onion to the pot and stir. Add ginger paste and sauté well.\r\nNow add the cumin seeds, half of the coriander seeds and chopped green chillies. Give them a quick stir.\r\nNext goes in the spices – turmeric powder and red chilli powder. Sauté the spices well for couple of minutes.\r\nAdd the chicken pieces to the wok, season it with salt to taste and cook the chicken covered on medium-low heat until the chicken is almost cooked through. This would take about 15 minutes. Slowly sautéing the chicken will enhance the flavor, so do not expedite this step by putting it on high heat.\r\nWhen the oil separates from the spices, add the beaten yogurt keeping the heat on lowest so that the yogurt doesn’t split. Sprinkle the remaining coriander seeds and add half of the dried fenugreek leaves. Mix well.\r\nFinally add the cream and give a final mix to combine everything well.\r\nSprinkle the remaining kasuri methi and garam masala and serve the chicken handi hot with naan or rotis. Enjoy!',
+  name: 'Chicken Handi',
+  source: '',
+  tags: [],
+  thumbnail: 'https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg',
+  youtube: 'https://www.youtube.com/watch?v=IO0issT0Rmc'
 }
+```
 
 De esta forma los datos podrán ser procesados de forma eficiente a través de llamadas a la base de datos o si se desea se puede crear una API REST para tener mejor escalabilidad.
 
